@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo1</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function add()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) + parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+        function sub()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) - parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+        function mul()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) * parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+        function div()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) / parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+        function clear()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) + parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+        function about()
+        {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            sum = parseFloat (num1) + parseFloat(num2);
+            document.getElementById("result").placeholder = sum;
+        }
+
+    </script>
+
+    <br>
+    <table>
+        <tr>
+            <td>First Number: </td>
+            <td><input type="text" size="5" id="n1"></td>
+        </tr>
+
+        <tr>
+            <td>Second Number: </td>
+            <td><input type="text" size="5" id="n2"></td>
+        </tr>
+
+        <tr>
+            <td>Result: </td>
+            <td><input type="text" size="5" placeholder="" id="result" disabled></p></td>
+        </tr>
+
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td><button onclick="add()">Addition</button></td>
+            <td><button onclick="sub()">Subtraction</button></td>
+            <td><button onclick="mul()">Multiply</button></td>
+            <td><button onclick="div()">Divide</button></td>
+            <td><button onclick="clear()">Clear</button></td>
+            <td><button onclick="about()">About</button></td>
+        </tr>
+        <tr>
+            <td>
+                <h1 id="a"></h1>
+            
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
